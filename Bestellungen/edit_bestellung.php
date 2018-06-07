@@ -2,7 +2,7 @@
 $tisch = $_GET['Tisch'];
 for ($i = 1; $i <= 1000; $i++) {
 if(isset($_GET[$i])) {			
-			$conn = new mysqli("192.168.92.230", "root", "root", "Janiak");
+			$conn = new mysqli("", "", "", "");
 
 			if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
@@ -23,7 +23,7 @@ if(isset($_GET[$i])) {
 		}
 }
 if(isset($_GET['Bezahlt'])) {
-	$conn = new mysqli("192.168.92.230", "root", "root", "Janiak");
+	$conn = new mysqli("", "", "", "");
 	if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
 			}
