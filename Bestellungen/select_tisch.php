@@ -10,7 +10,7 @@ foreach( $Ueberschriften as $ue )
 	echo "<TH>".$ue."</TH>";
 }	
 
-$conn = new mysqli("192.168.92.230", "root", "root", "Janiak");
+$conn = new mysqli("", "", "", "");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
